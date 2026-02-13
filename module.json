@@ -1,0 +1,11 @@
+{
+    "name": "no-drunk-screen",
+    "author": "Leibeun",
+    "description": "Prevents drunk screen effect",
+    "options": {
+        "cliName": "No Drunk Screen",
+        "guiName": "<font color='#FF0000'>No Drunk Screen</font>&nbsp;"
+    },
+    "servers": ["https://raw.githubusercontent.com/Leibeun/no-drunk-screen/master/"],
+    "disableAutoUpdate": false
+}
