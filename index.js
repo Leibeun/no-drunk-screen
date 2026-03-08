@@ -2,16 +2,10 @@ const BLOCKED = [4850,48732,48733,48734,48735,48736,48737,48738,48739,690019,702
 
 module.exports = function noDrunkScreen(dispatch) {
 
-    dispatch.hook('S_ABNORMALITY_BEGIN', 3, { order: -Infinity, filter: { 'fake': false } }, _ => {
+    dispatch.hook('S_ABNORMALITY_BEGIN', '*', { order: -Infinity, filter: { 'fake': null } }, _ => {
 		if(BLOCKED.includes(_.id))return false	
      });
-	dispatch.hook('S_ABNORMALITY_REFRESH', 1, { order: -Infinity, filter: { 'fake': false } }, _ => {
-		if(BLOCKED.includes(_.id))return false	
-     });
-	dispatch.hook('S_ABNORMALITY_BEGIN', 3, { order: -Infinity, filter: { 'fake': true } }, _ => {
-		if(BLOCKED.includes(_.id))return false	
-     });
-	dispatch.hook('S_ABNORMALITY_REFRESH', 1, { order: -Infinity, filter: { 'fake': true } }, _ => {
+	dispatch.hook('S_ABNORMALITY_REFRESH', '*', { order: -Infinity, filter: { 'fake': null } }, _ => {
 		if(BLOCKED.includes(_.id))return false	
      });
 }

@@ -1,10 +1,10 @@
 {
     "files": {
-        "index.js": "50292a7a01b6650f3fbea9a7ab013f1307edac11ff02b165713010f043d138f8",
+        "index.js": "ece9d4d0b7da3df98ac37a278ca0e35627c6d62300ddd6ec65ec8dc5a6fe3411",
         "module.json": "9703684c52aa93b40466450e951b117c0ff076fda3702353453555bff0143d75"
     },
     "defs": {
-        "S_ABNORMALITY_BEGIN": 3,
-        "S_ABNORMALITY_REFRESH": 1
+        "S_ABNORMALITY_BEGIN": "*",
+        "S_ABNORMALITY_REFRESH": "*"
     }
 }
